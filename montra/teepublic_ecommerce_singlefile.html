@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My TeePublic Shop — Motivational & Streetwear Tees</title>
+  <meta name="description" content="Discover high-quality motivational, streetwear, and funny T-shirts from my TeePublic store. Shop unique designs like 'Smile Through The Rage', 'Just Vibbin', 'Discipline Equals Freedom', and more." />
+  <meta name="keywords" content="TeePublic, t-shirt, motivational tees, streetwear, graphic design, shop, clothing, fashion, buy t-shirts online, funny shirts, aesthetic clothing" />
+  <meta name="author" content="Jerry Designs" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#7dd3fc; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+      --radius:14px; --gap:18px; --maxw:1200px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      background:linear-gradient(180deg,#071024 0%, #071827 100%); color:#e6eef6; -webkit-font-smoothing:antialiased;
+      display:flex; flex-direction:column; min-height:100vh;
+    }
+    header, main, footer {width:100%; display:block;}
+    header{background:var(--card);border-bottom:1px solid rgba(255,255,255,0.05);padding:20px 30px;position:sticky;top:0;z-index:20}
+    .nav{max-width:var(--maxw);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .brand .logo{width:50px;height:50px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#05202b}
+    .nav-links a{color:var(--muted);text-decoration:none;margin:0 10px;font-size:15px;transition:color .2s}
+    .nav-links a:hover{color:var(--accent)}
+
+    main{flex:1;padding:40px 20px;display:flex;flex-direction:column;align-items:center;}
+    .section{width:100%;max-width:var(--maxw);margin-bottom:50px;}
+
+    h1,h2,h3{color:#fff;margin-bottom:12px}
+    p{color:var(--muted);line-height:1.6}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:var(--gap)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);display:flex;flex-direction:column;gap:10px}
+    .thumb{height:180px;border-radius:10px;background:linear-gradient(135deg,#0b1b2a,#071126);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+    .title{font-weight:600;font-size:15px;line-height:1.2}
+    .meta{color:var(--muted);font-size:13px}
+    .actions{margin-top:auto;display:flex;gap:10px}
+    .btn{flex:1;padding:10px;border-radius:10px;text-decoration:none;text-align:center;font-weight:700;display:inline-block}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#022;}
+    .btn.ghost{border:1px solid rgba(255,255,255,0.04);color:var(--muted);background:transparent}
+
+    footer{background:#0b1220;border-top:1px solid rgba(255,255,255,0.05);padding:30px 20px;text-align:center;font-size:14px;color:var(--muted)}
+    footer a{color:var(--accent);text-decoration:none}
+
+    .contact-box{background:rgba(255,255,255,0.03);padding:20px;border-radius:12px;text-align:center}
+    .contact-box p{margin-bottom:12px}
+
+    @media (max-width:600px){.thumb{height:140px}.nav-links{width:100%;text-align:center;margin-top:10px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="#" class="brand"><div class="logo">TP</div><strong>Jerry’s TeePublic Store</strong></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Our Shop</h2>
+      <p>Welcome to Jerry’s TeePublic collection — where creativity meets comfort. Every design here tells a story: from powerful motivational quotes to vibrant streetwear and fun aesthetic tees. We aim to bring you quality, originality, and attitude in every piece. Whether you love bold designs, minimalist vibes, or witty humor, you’ll find something that fits your mood.</p>
+    </section>
+
+    <section id="shop" class="section">
+      <h2>Shop Our Featured Designs</h2>
+      <p>Browse our best-selling TeePublic t-shirts below. Click “Buy now” to visit the official product page and grab your favorite design.</p>
+      <div id="grid" class="grid" aria-live="polite"></div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact & Custom Designs</h2>
+      <div class="contact-box">
+        <p>Need a custom T-shirt design for your brand, event, or personal style? I’d love to help create something unique for you!</p>
+        <p>Reach out via TikTok for custom design requests or collaboration:</p>
+        <p><a href="https://www.tiktok.com/" target="_blank" rel="noopener">@YourTikTokHandle</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Jerry’s TeePublic Store. All rights reserved.</p>
+    <p>Designed with ❤️ by Jerry | Follow on <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a> for updates.</p>
+  </footer>
+
+  <script>
+    const products = [
+      {name: "Smile Through The Rage — Fierce Lion Motivation", url: "https://www.teepublic.com/t-shirt/81439080-smile-through-the-rage-fierce-lion-motivation-desi?store_id=4126574"},
+      {name: "Just Vibbin — Skull Chill Music Vibe", url: "https://www.teepublic.com/t-shirt/81439081-just-vibbin-skull-chill-music-vibe-design?store_id=4126574"},
+      {name: "Start Where You Are — Inspirational Quote", url: "https://www.teepublic.com/t-shirt/81439082-start-where-you-are-inspirational-quote-tee?store_id=4126574"},
+      {name: "An Old Man's Advice — Vintage Wisdom (1)", url: "https://www.teepublic.com/t-shirt/81439085-an-old-man-s-advice-vintage-wisdom?store_id=4126574"},
+      {name: "Speed Nitro Car — Racing Streetwear", url: "https://www.teepublic.com/t-shirt/81439086-speed-nitro-car-racing-streetwear?store_id=4126574"},
+      {name: "An Old Man's Advice — Vintage Wisdom (2)", url: "https://www.teepublic.com/t-shirt/81439083-an-old-man-s-advice-vintage-wisdom?store_id=4126574"},
+      {name: "Progress Over Perfection — Motivational", url: "https://www.teepublic.com/t-shirt/81439084-progress-over-perfection-motivational-design?store_id=4126574"},
+      {name: "Dead Inside But Caffeinated — Funny Tee", url: "https://www.teepublic.com/t-shirt/81439095-dead-inside-but-caffeinated-funny-t-shirt?store_id=4126574"},
+      {name: "Grow Through What You Go Through — Motivational", url: "https://www.teepublic.com/t-shirt/81439089-motivational-design-grow-through-what-you-go-throu?store_id=4126574"},
+      {name: "Fear Lives Here — Horror Halloween Tee", url: "https://www.teepublic.com/t-shirt/81439091-fear-lives-here-horror-halloween-tee?store_id=4126574"},
+      {name: "Dance 'Til Dead — Neon Skeleton Party", url: "https://www.teepublic.com/t-shirt/81439096-dance-til-dead-neon-skeleton-party-tee?store_id=4126574"},
+      {name: "Sleep Is For Earthlings — Retro Space", url: "https://www.teepublic.com/t-shirt/81439090-sleep-is-for-earthlings-retro-space?store_id=4126574"},
+      {name: "Neon Einstein — Science Glow Design", url: "https://www.teepublic.com/t-shirt/81439087-neon-einstein-science-glow-design?store_id=4126574"},
+      {name: "Discipline Equals Freedom — Motivational Shirt", url: "https://www.teepublic.com/t-shirt/81439097-discipline-equals-freedom-motivational-shirt?store_id=4126574"},
+      {name: "Dance 'Til Dead — Neon Skeleton Party (alt)", url: "https://www.teepublic.com/t-shirt/81439088-dance-til-dead-neon-skeleton-party?store_id=4126574"},
+      {name: "Bussin — Slang Streetwear Trendy Shirt", url: "https://www.teepublic.com/t-shirt/81439093-bussin-slang-streetwear-trendy-shirt?store_id=4126574"},
+      {name: "No Cap — Streetwear Slang Graphic", url: "https://www.teepublic.com/t-shirt/81439092-no-cap-streetwear-slang-graphic?store_id=4126574"},
+      {name: "Retro Vintage Aesthetic Tee", url: "https://www.teepublic.com/t-shirt/81438580-retro-vintage-aesthetic-t-shirt?store_id=4126574"},
+      {name: "Stay Analog — Retro Vintage Aesthetic", url: "https://www.teepublic.com/t-shirt/81438447-stay-analog-retro-vintage-aesthetic?store_id=4126574"},
+      {name: "Velologue — Vintage Bicycle Adventure", url: "https://www.teepublic.com/t-shirt/81438184-velologue-vintage-bicycle-adventure?store_id=4126574"},
+      {name: "Stay Wild Wolf — Wild Clothing", url: "https://www.teepublic.com/t-shirt/81300678-stay-wild-wolf-wild-clothe?store_id=4126574"},
+      {name: "Birthday Taco", url: "https://www.teepublic.com/t-shirt/81239148-birthday-taco?store_id=4126574"},
+      {name: "Wake Me Up Next Year", url: "https://www.teepublic.com/t-shirt/81239149-wake-me-up-next-year?store_id=4126574"},
+      {name: "Happy Birthday Dad", url: "https://www.teepublic.com/t-shirt/81238698-happy-birthday-dad?store_id=4126574"},
+      {name: "Scary Ghost Boo — Minimal Horror", url: "https://www.teepublic.com/t-shirt/81238319-scary-ghost-boo-minimal-horror-design?store_id=4126574"},
+      {name: "Love More Worry Less", url: "https://www.teepublic.com/t-shirt/81068814-love-more-worry-less?store_id=4126574"}
+    ];
+
+    const grid = document.getElementById('grid');
+    function createCard(p){
+      const el = document.createElement('div'); el.className='card';
+      const thumb = document.createElement('div'); thumb.className='thumb';
+      thumb.textContent='Tee Preview';
+      const title = document.createElement('div'); title.className='title'; title.textContent=p.name;
+      const meta = document.createElement('div'); meta.className='meta'; meta.textContent='teepublic.com';
+      const actions = document.createElement('div'); actions.className='actions';
+      const buy=document.createElement('a'); buy.className='btn primary'; buy.textContent='Buy now'; buy.href=p.url; buy.target='_blank'; buy.rel='noopener';
+      actions.appendChild(buy);
+      el.appendChild(thumb); el.appendChild(title); el.appendChild(meta); el.appendChild(actions);
+      return el;
+    }
+    function render(list){grid.innerHTML='';list.forEach(p=>grid.appendChild(createCard(p)))};
+    render(products);
+  </script>
+</body>
+</html>
